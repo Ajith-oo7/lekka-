@@ -1,0 +1,12 @@
+{
+  "name": "lekka-db-tests",
+  "private": true,
+  "type": "module",
+  "description": "Runs supabase/schema.sql in an in-memory Postgres (PGlite) and checks the Records, RLS and interest rules.",
+  "scripts": {
+    "test": "node phase2_rls_test.mjs && node phase3_interest_test.mjs && node phase4_shared_test.mjs && node phase5_reminders_test.mjs && node phase6_feedback_test.mjs && node --experimental-strip-types --no-warnings messages_test.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.2.17"
+  }
+}

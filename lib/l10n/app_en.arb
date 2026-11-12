@@ -1,0 +1,1139 @@
+{
+  "@@locale": "en",
+  "appName": "Lekka",
+  "@appName": {
+    "description": "App name. Kept in Latin letters in every language."
+  },
+  "tagline": "Every loan, clearly recorded",
+  "@tagline": {
+    "description": "Small line under the name in the app bar and sign-in screen."
+  },
+  "signInTitle": "Sign in",
+  "@signInTitle": {
+    "description": "Heading of the sign-in form."
+  },
+  "signUpTitle": "Create your account",
+  "@signUpTitle": {
+    "description": "Heading of the sign-up form."
+  },
+  "nameLabel": "Your name",
+  "@nameLabel": {
+    "description": "Name field, sign-up only."
+  },
+  "emailLabel": "Email",
+  "@emailLabel": {
+    "description": "Email field."
+  },
+  "passwordLabel": "Password",
+  "@passwordLabel": {
+    "description": "Password field."
+  },
+  "showPassword": "Show password",
+  "@showPassword": {
+    "description": "Tooltip on the eye icon."
+  },
+  "hidePassword": "Hide password",
+  "@hidePassword": {
+    "description": "Tooltip on the eye icon."
+  },
+  "languageLabel": "Language",
+  "@languageLabel": {
+    "description": "Label above the language chips."
+  },
+  "signInButton": "Sign in",
+  "@signInButton": {
+    "description": "Main button on the sign-in form."
+  },
+  "signUpButton": "Create account",
+  "@signUpButton": {
+    "description": "Main button on the sign-up form."
+  },
+  "switchToSignIn": "Already have an account? Sign in",
+  "@switchToSignIn": {
+    "description": "Link under the sign-up form."
+  },
+  "switchToSignUp": "New to Lekka? Create an account",
+  "@switchToSignUp": {
+    "description": "Link under the sign-in form."
+  },
+  "errorNameRequired": "Enter your name",
+  "@errorNameRequired": {
+    "description": "Field error."
+  },
+  "errorEmailInvalid": "Enter a valid email",
+  "@errorEmailInvalid": {
+    "description": "Field error."
+  },
+  "errorPasswordShort": "Use at least 6 characters",
+  "@errorPasswordShort": {
+    "description": "Field error."
+  },
+  "errorWrongCredentials": "Email or password is wrong",
+  "@errorWrongCredentials": {
+    "description": "Shown under the password field."
+  },
+  "errorEmailInUse": "An account with this email already exists",
+  "@errorEmailInUse": {
+    "description": "Shown under the email field."
+  },
+  "errorWeakPassword": "Choose a stronger password",
+  "@errorWeakPassword": {
+    "description": "Shown under the password field."
+  },
+  "errorEmailNotConfirmed": "Confirm your email first. Check your inbox.",
+  "@errorEmailNotConfirmed": {
+    "description": "Shown under the email field."
+  },
+  "errorNetwork": "No connection. Check your internet and try again.",
+  "@errorNetwork": {
+    "description": "Shown under the button."
+  },
+  "errorTooManyTries": "Too many tries. Wait a minute and try again.",
+  "@errorTooManyTries": {
+    "description": "Shown under the button."
+  },
+  "errorGeneric": "Something went wrong. Please try again.",
+  "@errorGeneric": {
+    "description": "Shown under the button."
+  },
+  "confirmEmailSent": "We sent a link to {email}. Open it, then sign in here.",
+  "@confirmEmailSent": {
+    "description": "After sign-up when email confirmation is on.",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "topLoans": "Loans",
+  "@topLoans": {
+    "description": "Top pill switch in the app bar."
+  },
+  "topChits": "Chits",
+  "@topChits": {
+    "description": "Top pill switch, and the Chits placeholder title."
+  },
+  "navLoans": "Loans",
+  "@navLoans": {
+    "description": "Bottom bar."
+  },
+  "navRecords": "Records",
+  "@navRecords": {
+    "description": "Bottom bar and Records screen title."
+  },
+  "navReminders": "Reminders",
+  "@navReminders": {
+    "description": "Bottom bar and Reminders screen title."
+  },
+  "navSummary": "Summary",
+  "@navSummary": {
+    "description": "Bottom bar and Summary screen title."
+  },
+  "greeting": "Hello, {name}",
+  "@greeting": {
+    "description": "User card greeting.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "greetingNoName": "Hello",
+  "@greetingNoName": {
+    "description": "User card greeting when the name is not known."
+  },
+  "moneyLent": "Money Lent",
+  "@moneyLent": {
+    "description": "Home switch."
+  },
+  "moneyBorrowed": "Money Borrowed",
+  "@moneyBorrowed": {
+    "description": "Home switch."
+  },
+  "summaryLabelLent": "Total to receive",
+  "@summaryLabelLent": {
+    "description": "Summary card label on the Money Lent side."
+  },
+  "summaryLabelBorrowed": "Total to repay",
+  "@summaryLabelBorrowed": {
+    "description": "Summary card label on the Money Borrowed side."
+  },
+  "activeCount": "{count} active",
+  "@activeCount": {
+    "description": "Pill on the summary card: number of active loans.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "monthlyInterest": "Monthly interest",
+  "@monthlyInterest": {
+    "description": "Summary card column."
+  },
+  "lateInterestAdded": "Late interest added",
+  "@lateInterestAdded": {
+    "description": "Summary card column and Summary screen."
+  },
+  "sectionLoans": "Your loans",
+  "@sectionLoans": {
+    "description": "Home section heading."
+  },
+  "noLoansTitle": "No loans yet",
+  "@noLoansTitle": {
+    "description": "Home empty state."
+  },
+  "noLoansLentBody": "Money you lend will show here, sorted by due date.",
+  "@noLoansLentBody": {
+    "description": "Home empty state, Money Lent side."
+  },
+  "noLoansBorrowedBody": "Money you borrow will show here, sorted by due date.",
+  "@noLoansBorrowedBody": {
+    "description": "Home empty state, Money Borrowed side."
+  },
+  "recordsPreviewTitle": "Latest records",
+  "@recordsPreviewTitle": {
+    "description": "Home section heading."
+  },
+  "seeAll": "See all",
+  "@seeAll": {
+    "description": "Link to the Records tab."
+  },
+  "noRecordsTitle": "No records yet",
+  "@noRecordsTitle": {
+    "description": "Records empty state."
+  },
+  "noRecordsBody": "Every payment and every change of interest will be listed here.",
+  "@noRecordsBody": {
+    "description": "Records empty state."
+  },
+  "noRemindersTitle": "No reminders yet",
+  "@noRemindersTitle": {
+    "description": "Reminders empty state."
+  },
+  "noRemindersBody": "Due date reminders and pings will show here.",
+  "@noRemindersBody": {
+    "description": "Reminders empty state."
+  },
+  "summaryTotalLent": "Total lent",
+  "@summaryTotalLent": {
+    "description": "Summary screen."
+  },
+  "summaryTotalBorrowed": "Total borrowed",
+  "@summaryTotalBorrowed": {
+    "description": "Summary screen."
+  },
+  "summaryInterestEarned": "Interest earned",
+  "@summaryInterestEarned": {
+    "description": "Summary screen."
+  },
+  "summaryLoansByStatus": "Loans by status",
+  "@summaryLoansByStatus": {
+    "description": "Summary screen heading."
+  },
+  "statusOnTrack": "On track",
+  "@statusOnTrack": {
+    "description": "Loan status."
+  },
+  "statusDueSoon": "Due soon",
+  "@statusDueSoon": {
+    "description": "Loan status."
+  },
+  "statusOverdue": "Overdue",
+  "@statusOverdue": {
+    "description": "Loan status."
+  },
+  "chitsComingSoon": "Coming soon",
+  "@chitsComingSoon": {
+    "description": "Chits placeholder."
+  },
+  "settingsTitle": "Settings",
+  "@settingsTitle": {
+    "description": "Settings screen title and app bar tooltip."
+  },
+  "settingsLanguage": "Language",
+  "@settingsLanguage": {
+    "description": "Settings section."
+  },
+  "settingsTheme": "Theme",
+  "@settingsTheme": {
+    "description": "Settings section."
+  },
+  "themeSystem": "Same as phone",
+  "@themeSystem": {
+    "description": "Theme option: follow the system."
+  },
+  "themeLight": "Light",
+  "@themeLight": {
+    "description": "Theme option."
+  },
+  "themeDark": "Dark",
+  "@themeDark": {
+    "description": "Theme option."
+  },
+  "signedInAs": "Signed in as {email}",
+  "@signedInAs": {
+    "description": "Settings, above Sign out.",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signOut": "Sign out",
+  "@signOut": {
+    "description": "Settings button."
+  },
+  "langEnglish": "English",
+  "@langEnglish": {
+    "description": "Language name in its own script. Same in every file."
+  },
+  "langTelugu": "తెలుగు",
+  "@langTelugu": {
+    "description": "Language name in its own script. Same in every file."
+  },
+  "langHindi": "हिन्दी",
+  "@langHindi": {
+    "description": "Language name in its own script. Same in every file."
+  },
+  "configMissing": "Lekka can't start: the database settings are missing. See the README.",
+  "@configMissing": {
+    "description": "Setup error: env.json not passed."
+  },
+  "configSecretKey": "Lekka can't start: a secret key was given. Use the public anon key only.",
+  "@configSecretKey": {
+    "description": "Setup error: service-role key used."
+  },
+  "newLoan": "New Loan",
+  "@newLoan": {
+    "description": "Floating button and New loan screen title."
+  },
+  "groupsTitle": "Groups",
+  "@groupsTitle": {
+    "description": "Groups screen title and link on Home."
+  },
+  "newGroup": "New group",
+  "@newGroup": {
+    "description": "Button and dialog title."
+  },
+  "groupNameLabel": "Group name",
+  "@groupNameLabel": {
+    "description": "New group field."
+  },
+  "errorGroupNameRequired": "Enter a group name",
+  "@errorGroupNameRequired": {
+    "description": "Field error."
+  },
+  "noGroupsTitle": "No groups yet",
+  "@noGroupsTitle": {
+    "description": "Groups empty state."
+  },
+  "noGroupsBody": "Make a group to keep loans together, for example by family or village.",
+  "@noGroupsBody": {
+    "description": "Groups empty state."
+  },
+  "noLoansInGroupBody": "Loans in this group will show here.",
+  "@noLoansInGroupBody": {
+    "description": "Group page empty state."
+  },
+  "loanCount": "{count, plural, =0{No loans} =1{1 loan} other{{count} loans}}",
+  "@loanCount": {
+    "description": "Under each group name.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLabel": "Group",
+  "@groupLabel": {
+    "description": "Field label."
+  },
+  "chooseGroup": "Choose a group",
+  "@chooseGroup": {
+    "description": "Picker placeholder and sheet title."
+  },
+  "borrowerLabel": "Borrower",
+  "@borrowerLabel": {
+    "description": "Field label."
+  },
+  "chooseBorrower": "Choose a borrower",
+  "@chooseBorrower": {
+    "description": "Picker placeholder and sheet title."
+  },
+  "addNewPerson": "Add a new person",
+  "@addNewPerson": {
+    "description": "Borrower sheet."
+  },
+  "personNameLabel": "Name",
+  "@personNameLabel": {
+    "description": "New person field."
+  },
+  "phoneOptionalLabel": "Phone (optional)",
+  "@phoneOptionalLabel": {
+    "description": "New person field."
+  },
+  "noContactsYet": "No people yet. Add the first one above.",
+  "@noContactsYet": {
+    "description": "Borrower sheet when empty."
+  },
+  "errorChooseGroup": "Choose a group",
+  "@errorChooseGroup": {
+    "description": "Field error."
+  },
+  "errorChooseBorrower": "Choose who is borrowing",
+  "@errorChooseBorrower": {
+    "description": "Field error."
+  },
+  "amountLabel": "Amount",
+  "@amountLabel": {
+    "description": "Amount field."
+  },
+  "errorAmountRequired": "Enter an amount above ₹0",
+  "@errorAmountRequired": {
+    "description": "Field error."
+  },
+  "interestSection": "Interest",
+  "@interestSection": {
+    "description": "Section heading."
+  },
+  "interestRateLabel": "Interest rate",
+  "@interestRateLabel": {
+    "description": "Field label and terms row."
+  },
+  "errorRateInvalid": "Enter a rate, for example 10 or 2.5",
+  "@errorRateInvalid": {
+    "description": "Field error."
+  },
+  "interestPeriodLabel": "Rate is charged per",
+  "@interestPeriodLabel": {
+    "description": "Label above day/week/month/year chips."
+  },
+  "periodDay": "Day",
+  "@periodDay": {
+    "description": "Period chip."
+  },
+  "periodWeek": "Week",
+  "@periodWeek": {
+    "description": "Period chip."
+  },
+  "periodMonth": "Month",
+  "@periodMonth": {
+    "description": "Period chip."
+  },
+  "periodYear": "Year",
+  "@periodYear": {
+    "description": "Period chip."
+  },
+  "ratePerDay": "{rate} per day",
+  "@ratePerDay": {
+    "description": "Rate text.",
+    "placeholders": {
+      "rate": {
+        "type": "String"
+      }
+    }
+  },
+  "ratePerWeek": "{rate} per week",
+  "@ratePerWeek": {
+    "description": "Rate text.",
+    "placeholders": {
+      "rate": {
+        "type": "String"
+      }
+    }
+  },
+  "ratePerMonth": "{rate} per month",
+  "@ratePerMonth": {
+    "description": "Rate text.",
+    "placeholders": {
+      "rate": {
+        "type": "String"
+      }
+    }
+  },
+  "ratePerYear": "{rate} per year",
+  "@ratePerYear": {
+    "description": "Rate text.",
+    "placeholders": {
+      "rate": {
+        "type": "String"
+      }
+    }
+  },
+  "interestTypeLabel": "Interest type",
+  "@interestTypeLabel": {
+    "description": "Field label and terms row."
+  },
+  "interestSimple": "Simple",
+  "@interestSimple": {
+    "description": "Interest type."
+  },
+  "interestCompound": "Compound",
+  "@interestCompound": {
+    "description": "Interest type."
+  },
+  "interestSimpleHelp": "Interest is worked out on the principal only.",
+  "@interestSimpleHelp": {
+    "description": "Help under the switch."
+  },
+  "interestCompoundHelp": "Unpaid interest also earns interest.",
+  "@interestCompoundHelp": {
+    "description": "Help under the switch."
+  },
+  "lateRateLabel": "Late interest",
+  "@lateRateLabel": {
+    "description": "Field label and terms row."
+  },
+  "graceDaysLabel": "Grace days",
+  "@graceDaysLabel": {
+    "description": "Field label and terms row."
+  },
+  "errorGraceDays": "Enter a number of days",
+  "@errorGraceDays": {
+    "description": "Field error."
+  },
+  "lateRateHelp": "Extra interest after the due date and grace days. Use 0 for none.",
+  "@lateRateHelp": {
+    "description": "Help under late interest."
+  },
+  "noLateInterest": "No late interest",
+  "@noLateInterest": {
+    "description": "Terms row."
+  },
+  "lateTerms": "Late: +{rate} after {days} grace days",
+  "@lateTerms": {
+    "description": "Terms summary.",
+    "placeholders": {
+      "rate": {
+        "type": "String"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "termsLine": "{rate}, {type}. {late}",
+  "@termsLine": {
+    "description": "One-line terms summary in Records.",
+    "placeholders": {
+      "rate": {
+        "type": "String"
+      },
+      "type": {
+        "type": "String"
+      },
+      "late": {
+        "type": "String"
+      }
+    }
+  },
+  "termsVersionLine": "Version {version}: {terms}",
+  "@termsVersionLine": {
+    "description": "Records detail for Terms updated.",
+    "placeholders": {
+      "version": {
+        "type": "int"
+      },
+      "terms": {
+        "type": "String"
+      }
+    }
+  },
+  "datesSection": "Dates",
+  "@datesSection": {
+    "description": "Section heading."
+  },
+  "startDateLabel": "Start date",
+  "@startDateLabel": {
+    "description": "Field label."
+  },
+  "nextDueDateLabel": "Next due date",
+  "@nextDueDateLabel": {
+    "description": "Field label."
+  },
+  "errorDueBeforeStart": "Due date can't be before the start date",
+  "@errorDueBeforeStart": {
+    "description": "Field error."
+  },
+  "saveLoan": "Save loan",
+  "@saveLoan": {
+    "description": "Button."
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Dialog button."
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Dialog button."
+  },
+  "owesYou": "owes you",
+  "@owesYou": {
+    "description": "Loan row and detail, lender side."
+  },
+  "youOwe": "you owe",
+  "@youOwe": {
+    "description": "Loan row and detail, borrower side."
+  },
+  "dueOn": "Due {date}",
+  "@dueOn": {
+    "description": "Loan row subtitle.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "statusPaid": "Paid",
+  "@statusPaid": {
+    "description": "Loan status when the balance is zero."
+  },
+  "loanTitle": "Loan",
+  "@loanTitle": {
+    "description": "Loan detail title when the name is missing."
+  },
+  "loanNotFound": "This loan could not be found",
+  "@loanNotFound": {
+    "description": "Loan detail when missing or not allowed."
+  },
+  "outstandingBalance": "Outstanding balance",
+  "@outstandingBalance": {
+    "description": "Loan detail balance card."
+  },
+  "amountGiven": "Amount given",
+  "@amountGiven": {
+    "description": "Loan detail row."
+  },
+  "currentTerms": "Current terms",
+  "@currentTerms": {
+    "description": "Loan detail heading."
+  },
+  "currentTermsVersion": "Current terms (version {version})",
+  "@currentTermsVersion": {
+    "description": "Loan detail heading.",
+    "placeholders": {
+      "version": {
+        "type": "int"
+      }
+    }
+  },
+  "noTerms": "No terms saved",
+  "@noTerms": {
+    "description": "Loan detail, should not normally happen."
+  },
+  "daysCount": "{count, plural, =1{1 day} other{{count} days}}",
+  "@daysCount": {
+    "description": "Grace days value.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordPayment": "Record payment",
+  "@recordPayment": {
+    "description": "Button and sheet title."
+  },
+  "balanceNow": "Balance now: {amount}",
+  "@balanceNow": {
+    "description": "Payment sheet.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentDateLabel": "Date paid",
+  "@paymentDateLabel": {
+    "description": "Payment field."
+  },
+  "noteOptionalLabel": "Note (optional)",
+  "@noteOptionalLabel": {
+    "description": "Payment field."
+  },
+  "errorMoreThanBalance": "This is more than the balance of {amount}",
+  "@errorMoreThanBalance": {
+    "description": "Field error.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPaymentBeforeStart": "The date is before the loan started",
+  "@errorPaymentBeforeStart": {
+    "description": "Field error."
+  },
+  "errorPaymentInFuture": "The date can't be in the future",
+  "@errorPaymentInFuture": {
+    "description": "Field error."
+  },
+  "savePayment": "Save payment",
+  "@savePayment": {
+    "description": "Button."
+  },
+  "paymentSaved": "Payment saved",
+  "@paymentSaved": {
+    "description": "Snackbar."
+  },
+  "entryLoanGiven": "Loan given",
+  "@entryLoanGiven": {
+    "description": "Records label."
+  },
+  "entryPaymentReceived": "Payment received",
+  "@entryPaymentReceived": {
+    "description": "Records label."
+  },
+  "entryInterestAdded": "Interest added",
+  "@entryInterestAdded": {
+    "description": "Records label."
+  },
+  "entryLateInterestAdded": "Late interest added",
+  "@entryLateInterestAdded": {
+    "description": "Records label."
+  },
+  "entryTermsUpdated": "Terms updated",
+  "@entryTermsUpdated": {
+    "description": "Records label."
+  },
+  "entryCorrection": "Correction",
+  "@entryCorrection": {
+    "description": "Records label."
+  },
+  "correctionNote": "Cancels a payment entered by mistake",
+  "@correctionNote": {
+    "description": "Records detail for a correction."
+  },
+  "correctedTag": "Corrected",
+  "@correctedTag": {
+    "description": "Under a payment that was corrected."
+  },
+  "correctPaymentTitle": "Correct this payment?",
+  "@correctPaymentTitle": {
+    "description": "Dialog title."
+  },
+  "correctPaymentBody": "A correction of {amount} will be added. The original payment stays in Records with a line through it.",
+  "@correctPaymentBody": {
+    "description": "Dialog body.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "addCorrection": "Add correction",
+  "@addCorrection": {
+    "description": "Dialog button."
+  },
+  "correctionAdded": "Correction added",
+  "@correctionAdded": {
+    "description": "Snackbar."
+  },
+  "longPressHint": "To correct a payment, press and hold it.",
+  "@longPressHint": {
+    "description": "Hint under Records."
+  },
+  "loadError": "Couldn't load. Check your internet.",
+  "@loadError": {
+    "description": "Error card."
+  },
+  "tryAgain": "Try again",
+  "@tryAgain": {
+    "description": "Error card button."
+  },
+  "changeTerms": "Change terms",
+  "@changeTerms": {
+    "description": "Loan detail button and screen title."
+  },
+  "newTermsVersion": "New terms (version {version})",
+  "@newTermsVersion": {
+    "description": "Change terms heading.",
+    "placeholders": {
+      "version": {
+        "type": "int"
+      }
+    }
+  },
+  "changeTermsInfo": "New terms count from today. Days already passed keep the old terms, and Records will show the change. The borrower can always see it.",
+  "@changeTermsInfo": {
+    "description": "Change terms info box."
+  },
+  "saveNewTerms": "Save new terms",
+  "@saveNewTerms": {
+    "description": "Button."
+  },
+  "errorTermsUnchanged": "These are the same as the current terms",
+  "@errorTermsUnchanged": {
+    "description": "Error under the button."
+  },
+  "termsSaved": "New terms saved",
+  "@termsSaved": {
+    "description": "Snackbar."
+  },
+  "noteInterest": "{type} interest: {rate} on {amount}",
+  "@noteInterest": {
+    "description": "Records detail for an interest entry. type is Simple/Compound.",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      },
+      "rate": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "noteLateInterest": "Late interest: {rate} on {amount}",
+  "@noteLateInterest": {
+    "description": "Records detail for a late interest entry.",
+    "placeholders": {
+      "rate": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "joinWithCode": "Join with code",
+  "@joinWithCode": {
+    "description": "Button on Home (Money Borrowed) and Join screen title."
+  },
+  "joinBody": "Enter the invite code the lender gave you. You will see the loan and its Records.",
+  "@joinBody": {
+    "description": "Join screen."
+  },
+  "inviteCodeLabel": "Invite code",
+  "@inviteCodeLabel": {
+    "description": "Join screen field."
+  },
+  "joinButton": "Join",
+  "@joinButton": {
+    "description": "Join screen button."
+  },
+  "errorCodeRequired": "Enter the code",
+  "@errorCodeRequired": {
+    "description": "Field error."
+  },
+  "errorInviteInvalid": "This code is wrong, already used or expired. Ask for a new one.",
+  "@errorInviteInvalid": {
+    "description": "Field error."
+  },
+  "errorInviteOwn": "This is your own invite. Send it to the borrower.",
+  "@errorInviteOwn": {
+    "description": "Field error."
+  },
+  "inviteBorrower": "Invite {name} to this loan",
+  "@inviteBorrower": {
+    "description": "Loan detail button.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteTitle": "Invite code",
+  "@inviteTitle": {
+    "description": "Invite dialog title."
+  },
+  "inviteBody": "Share this code. In Lekka they open Money Borrowed, tap Join with code and enter it. They will see this loan and its Records, and can accept the terms.",
+  "@inviteBody": {
+    "description": "Invite dialog."
+  },
+  "inviteExpiry": "Works once, for 7 days.",
+  "@inviteExpiry": {
+    "description": "Invite dialog."
+  },
+  "copyCode": "Copy code",
+  "@copyCode": {
+    "description": "Invite dialog button."
+  },
+  "copyInviteMessage": "Copy message",
+  "@copyInviteMessage": {
+    "description": "Invite dialog button."
+  },
+  "inviteMessage": "Join my loan record on Lekka. Open the app, go to Money Borrowed, tap Join with code and enter {code}. Or open: {link}",
+  "@inviteMessage": {
+    "description": "Message copied for sharing.",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "copied": "Copied",
+  "@copied": {
+    "description": "Snackbar."
+  },
+  "done": "Done",
+  "@done": {
+    "description": "Dialog button."
+  },
+  "acceptTermsTitle": "Accept the terms",
+  "@acceptTermsTitle": {
+    "description": "Accept card title."
+  },
+  "acceptTermsBody": "{name} set these terms for this loan. Check them and accept. Later changes will appear in Records.",
+  "@acceptTermsBody": {
+    "description": "Accept card body.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "acceptTermsButton": "Accept terms",
+  "@acceptTermsButton": {
+    "description": "Accept card button."
+  },
+  "termsAcceptedDone": "Terms accepted",
+  "@termsAcceptedDone": {
+    "description": "Snackbar."
+  },
+  "termsAcceptedBy": "{name} accepted the terms",
+  "@termsAcceptedBy": {
+    "description": "Lender view, shared loan.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "termsWaiting": "Waiting for {name} to accept the terms",
+  "@termsWaiting": {
+    "description": "Lender view, shared loan.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "confirmPayment": "Confirm payment",
+  "@confirmPayment": {
+    "description": "Borrower button on a payment row."
+  },
+  "paymentConfirmed": "Payment confirmed",
+  "@paymentConfirmed": {
+    "description": "Snackbar."
+  },
+  "youConfirmed": "You confirmed this",
+  "@youConfirmed": {
+    "description": "Tag on a payment row (borrower)."
+  },
+  "confirmedByBorrower": "Confirmed by borrower",
+  "@confirmedByBorrower": {
+    "description": "Tag on a payment row (lender)."
+  },
+  "notConfirmedYet": "Not confirmed yet",
+  "@notConfirmedYet": {
+    "description": "Tag on a payment row (lender)."
+  },
+  "closeLoan": "Close loan",
+  "@closeLoan": {
+    "description": "Loan detail button."
+  },
+  "closeLoanTitle": "Close this loan?",
+  "@closeLoanTitle": {
+    "description": "Dialog title."
+  },
+  "closeLoanBody": "No more interest or payments will be added. Records stay visible.",
+  "@closeLoanBody": {
+    "description": "Dialog body."
+  },
+  "closeLoanBodyUnpaid": "This loan still has a balance. If you close it, no more interest or payments will be added. Records stay visible.",
+  "@closeLoanBodyUnpaid": {
+    "description": "Dialog body when balance is above zero."
+  },
+  "loanClosedDone": "Loan closed",
+  "@loanClosedDone": {
+    "description": "Snackbar."
+  },
+  "loanClosedNote": "This loan is closed. Nothing more is added to it.",
+  "@loanClosedNote": {
+    "description": "Banner on a closed loan."
+  },
+  "iGaveLoan": "I gave this loan",
+  "@iGaveLoan": {
+    "description": "New loan switch."
+  },
+  "iTookLoan": "I took this loan",
+  "@iTookLoan": {
+    "description": "New loan switch."
+  },
+  "iTookLoanHelp": "For a loan you took from someone who does not use Lekka. Only you will see it.",
+  "@iTookLoanHelp": {
+    "description": "Help under the switch."
+  },
+  "lenderLabel": "Lender",
+  "@lenderLabel": {
+    "description": "Field label."
+  },
+  "chooseLender": "Choose the lender",
+  "@chooseLender": {
+    "description": "Picker placeholder and sheet title."
+  },
+  "errorChooseLender": "Choose who gave the loan",
+  "@errorChooseLender": {
+    "description": "Field error."
+  },
+  "sendPing": "Send ping",
+  "@sendPing": {
+    "description": "Loan detail button (shared loans)."
+  },
+  "pingSent": "Reminder sent to {name}",
+  "@pingSent": {
+    "description": "Snackbar.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPingLimit": "You can send 3 pings a day for a loan. Try again tomorrow.",
+  "@errorPingLimit": {
+    "description": "Snackbar."
+  },
+  "remDueSoonTitle": "Payment due in 2 days",
+  "@remDueSoonTitle": {
+    "description": "Reminder title."
+  },
+  "remDueTodayTitle": "Payment due today",
+  "@remDueTodayTitle": {
+    "description": "Reminder title."
+  },
+  "remOverdueTitle": "Payment overdue",
+  "@remOverdueTitle": {
+    "description": "Reminder title."
+  },
+  "remPingTitle": "Reminder from {name}",
+  "@remPingTitle": {
+    "description": "Reminder title for a ping.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "remDueSoonBorrower": "Your payment to {name} is due on {date}. Balance: {amount}.",
+  "@remDueSoonBorrower": {
+    "description": "Reminder body, to the borrower.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "remDueSoonLender": "{name}'s payment is due on {date}. Balance: {amount}.",
+  "@remDueSoonLender": {
+    "description": "Reminder body, to a lender whose borrower has no app.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "remDueTodayBorrower": "Your payment to {name} is due today. Balance: {amount}.",
+  "@remDueTodayBorrower": {
+    "description": "Reminder body.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "remDueTodayLender": "{name}'s payment is due today. Balance: {amount}.",
+  "@remDueTodayLender": {
+    "description": "Reminder body.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "remOverdueBorrower": "Your payment to {name} is overdue. Late interest added so far: {late}. Balance: {amount}.",
+  "@remOverdueBorrower": {
+    "description": "Reminder body.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "late": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "remOverdueLender": "{name}'s payment is overdue. Late interest added so far: {late}. Balance: {amount}.",
+  "@remOverdueLender": {
+    "description": "Reminder body.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "late": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "remPingBody": "{name} is reminding you about your loan. Balance: {amount}.",
+  "@remPingBody": {
+    "description": "Reminder body for a ping.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "reportProblem": "Report a problem",
+  "@reportProblem": {
+    "description": "Settings row and dialog title."
+  },
+  "reportHint": "What went wrong? Which screen were you on?",
+  "@reportHint": {
+    "description": "Report dialog hint."
+  },
+  "errorReportEmpty": "Write a few words about the problem",
+  "@errorReportEmpty": {
+    "description": "Field error."
+  },
+  "reportSent": "Thank you. Your report was sent.",
+  "@reportSent": {
+    "description": "Snackbar."
+  },
+  "send": "Send",
+  "@send": {
+    "description": "Dialog button."
+  }
+}

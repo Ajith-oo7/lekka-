@@ -1,0 +1,10 @@
+import { setup, U } from './harness.mjs';
+const { db, q, as, check, blocked, done } = await setup(process.argv.slice(2));
+await db.exec(`insert into auth.users values ('${U.bala}','{"name":"Bala"}'),('${U.vasu}','{"name":"Vasu"}');`);
+await as(U.vasu);
+await q(`insert into feedback (user_id, message, app_version) values ($1,'The date picker is hard to use','0.6.0')`, [U.vasu]);
+check('A tester can send a problem report', true);
+check('Reports cannot be read back from the app', (await q(`select count(*)::int n from feedback`))[0].n === 0);
+await blocked('A report cannot be sent in someone else\'s name', () => q(`insert into feedback (user_id, message) values ($1,'x')`, [U.bala]), /row-level security/);
+await blocked('An empty report is refused', () => q(`insert into feedback (user_id, message) values ($1,'')`, [U.vasu]), /check constraint/);
+done();

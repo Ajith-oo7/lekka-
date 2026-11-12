@@ -1,0 +1,19 @@
+# Your real Supabase URL and anon key. Never commit it.
+env.json
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.iml
+.idea/
+.vscode/
+ios/Pods/
+ios/.symlinks/
+android/.gradle/
+android/local.properties
+
+# Database tests
+node_modules/
