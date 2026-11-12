@@ -19,6 +19,9 @@ Phase 7 (public launch) is not built: see `docs/LAUNCH_CHECKLIST.md` for what it
 **Current state:** the database rules are tested (`supabase/tests`), but the Flutter app has not been
 compiled or run yet. Expect some fixes on the first `flutter analyze`. See `docs/status/`.
 
+**New here?** Read `ABOUT_LEKKA.txt`: the whole app in plain words (use case, a worked story,
+functions, how to use it, the calculations).
+
 **Guides:** `docs/RELEASE.md` (setup for Phases 4 to 6, push, backups, test builds),
 `docs/TESTING.md` (what to check on a phone), `docs/translation_review.csv` (for native speakers), `docs/spec/` (the original build prompt and phases).
 

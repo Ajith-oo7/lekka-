@@ -1,0 +1,444 @@
+LEKKA: THE WHOLE APP EXPLAINED, FROM A TO Z
+===========================================
+
+"Lekka" means "account" or "count" in Telugu. The app keeps a clear,
+shared account of money lent between people who know each other.
+
+Status of this code (November 2026): Phases 1 to 6 are written. The
+database rules are tested. The phone app itself has not yet been compiled
+or run on a device, so expect some fixes the first time it is built.
+
+
+CONTENTS
+--------
+ 1. What Lekka is
+ 2. The problem it solves (use case)
+ 3. Who uses it, and the three ways to use it
+ 4. A story: Bala lends Vasu 500 rupees
+ 5. What the app can do (functions)
+ 6. How to use it, step by step
+ 7. Screens
+ 8. The rules and calculations (algorithms)
+ 9. How it is built (the parts)
+10. What is stored (the data)
+11. Privacy and safety
+12. What Lekka does not do
+13. What is finished and what is left
+14. Words used in this file
+
+
+1. WHAT LEKKA IS
+----------------
+Lekka is a mobile app for Android and iPhone. It replaces the notebook
+that a moneylender keeps. Every loan, every payment, every rupee of
+interest and every change of the interest rate is written down in a list
+called Records. Nothing in Records can be edited or deleted afterwards.
+
+The lender and the borrower can both open the same loan on their own
+phones and see the same numbers.
+
+Lekka only keeps records and sends reminders. It never moves money.
+People still pay each other in cash or by their usual method, and then
+write the payment in Lekka.
+
+Languages: English, Telugu and Hindi. Currency: Indian rupees, shown
+with Indian grouping (12,34,567).
+
+
+2. THE PROBLEM IT SOLVES (USE CASE)
+-----------------------------------
+In South India many people lend money informally to family, neighbours
+and people in their village. This is called vaddi vyaparam. The lender
+writes the loans in a notebook. This causes problems:
+
+  - Only the lender has the notebook. The borrower has to trust it.
+  - Interest is worked out by hand, so mistakes and arguments happen.
+  - If the rate changes, there is no proof of when or by how much.
+  - Nobody remembers due dates until it is too late.
+  - A lost notebook means lost records.
+
+Lekka gives both sides the same record. Interest is added by the app
+from the agreed terms, each amount comes with a short explanation, and
+both people are reminded before the due date.
+
+
+3. WHO USES IT, AND THE THREE WAYS TO USE IT
+--------------------------------------------
+There are two kinds of people: the lender (gives the money) and the
+borrower (takes it). One person can be a lender on some loans and a
+borrower on others. The home screen has a switch: "Money Lent" and
+"Money Borrowed".
+
+Three ways to use it:
+
+  a) Shared loan. Both people have the app. The lender creates the loan
+     and invites the borrower with a code. Both see the same loan. The
+     borrower accepts the terms and confirms payments.
+
+  b) Solo lender. The borrower has no phone or no app. The lender adds
+     the borrower as a name and tracks the loan alone.
+
+  c) Solo borrower. A person records a loan they took from someone who
+     does not use the app, to keep their own account of it.
+
+The lender always controls the interest terms. In a shared loan the
+borrower cannot change them, only accept them. Every change is a new
+"version" of the terms and is shown in Records.
+
+
+4. A STORY: BALA LENDS VASU 500 RUPEES
+--------------------------------------
+Day 1. Bala lends Vasu 500 rupees at 10% interest per month, to be
+repaid in 30 days. Bala opens Lekka, taps "New Loan", picks his group
+"Family", adds Vasu as the borrower, types 500 and 10, and saves.
+Records now shows two lines: "Loan given 500" and "Terms updated:
+version 1, 10% per month, simple".
+
+Bala taps "Invite Vasu to this loan" and gets a code. He sends it to
+Vasu. Vasu installs Lekka, signs up, opens "Money Borrowed", taps
+"Join with code" and types it. Vasu now sees the same loan. A card asks
+him to accept the terms. He reads "10% per month, Simple" and taps
+"Accept terms". Bala's phone shows "Vasu accepted the terms".
+
+Every night. At 00:30 India time the server adds one day of interest to
+every active loan. For this loan that is 1.67 rupees a day. Each line in
+Records says how it was worked out: "Simple interest: 10% per month on
+500".
+
+Day 10. Vasu pays Bala 100 rupees in cash. Bala taps "Record payment"
+and types 100. By then 16.70 of interest has built up. The payment
+clears the interest first (16.70) and the rest (83.30) reduces the
+loan. From the next day, interest is charged on 416.70, not 500. Vasu
+opens Records and taps "Confirm payment". Bala sees "Confirmed by
+borrower".
+
+A mistake. Suppose Bala typed 1000 instead of 100. He cannot edit the
+line. He presses and holds the wrong payment and chooses "Add
+correction". The wrong line stays, with a line through it, and a new
+"Correction" line cancels it. Then he records the right amount. Both
+people can see exactly what happened.
+
+Day 28. Two days before the due date, Vasu's phone shows "Payment due
+in 2 days". On day 30 it shows "Payment due today".
+
+Day 31 onwards. If Vasu has not paid, he gets "Payment overdue" every
+day. If Bala set late interest, it is now added each day and the
+reminder says how much late interest has been added so far. Bala can
+also tap "Send ping" to nudge Vasu, up to 3 times a day.
+
+A new rate. Bala and Vasu agree on 8% from now on. Bala taps "Change
+terms". Lekka saves version 2. The days already passed keep 10%; days
+from today use 8%. Records shows "Terms updated: version 2".
+
+The end. When Vasu has paid everything, the balance is 0 and the loan
+shows "Paid". Bala taps "Close loan". The full history stays visible to
+both of them.
+
+
+5. WHAT THE APP CAN DO (FUNCTIONS)
+----------------------------------
+Accounts
+  - Sign up and sign in with email and password, and your name.
+  - Choose English, Telugu or Hindi. Change it any time in Settings.
+  - Light mode, dark mode, or the same as the phone.
+
+Loans
+  - Groups: put loans into named groups (for example "Family").
+  - People: add a borrower (or lender) with a name and optional phone.
+  - New loan: amount, interest %, period (day, week, month, year),
+    simple or compound interest, late interest %, grace days, start
+    date, due date.
+  - Loan page: balance, status, terms, and that loan's Records.
+  - Record a payment, with date and optional note.
+  - Correct a wrong payment (press and hold it).
+  - Change terms (creates a new version).
+  - Close a loan.
+
+Sharing
+  - Invite the borrower with a 10-character code (works once, 7 days).
+  - Borrower joins with the code, accepts terms, confirms payments.
+  - Both phones update within seconds of a change.
+
+Interest
+  - Added automatically every night by the server.
+  - Late interest after the due date plus grace days.
+  - Every amount has a plain-language note.
+
+Reminders
+  - Push notifications: 2 days before, on the due date, every day
+    while overdue.
+  - Manual ping from the lender (3 a day per loan).
+  - A Reminders screen listing everything received.
+  - In the receiver's own language.
+
+Overview
+  - Home: total to receive or repay, number of active loans, expected
+    monthly interest, late interest added, loans sorted by due date.
+  - Records: every entry across all loans.
+  - Summary: totals lent and borrowed, interest earned, loans by status.
+
+Other
+  - Report a problem (Settings), which reaches the app owner.
+  - Chits: a placeholder that says "Coming soon".
+
+
+6. HOW TO USE IT, STEP BY STEP
+------------------------------
+As a lender
+  1. Sign up. Pick your language.
+  2. Tap "New Loan" (green button on the home screen).
+  3. Choose a group, or make a new one.
+  4. Choose the borrower, or "Add a new person".
+  5. Type the amount and the interest rate. Pick the period and whether
+     interest is simple or compound. Add late interest and grace days
+     if you want them (0 means none). Set the start and due dates.
+  6. Tap "Save loan".
+  7. If the borrower has a phone: open the loan, tap "Invite ... to
+     this loan", and send them the code.
+  8. When they pay you, open the loan and tap "Record payment".
+  9. Made a mistake? Press and hold the payment, then "Add correction".
+ 10. To change the rate, tap "Change terms".
+ 11. When it is fully paid, tap "Close loan".
+
+As a borrower who was invited
+  1. Sign up. Open "Money Borrowed" on the home screen.
+  2. Tap "Join with code" and type the code the lender sent.
+  3. Read the terms and tap "Accept terms".
+  4. Open the loan any time to see the balance and Records.
+  5. When the lender records your payment, tap "Confirm payment".
+
+As a borrower keeping your own account
+  1. Open "Money Borrowed", tap "New Loan".
+  2. Choose "I took this loan" and add the lender's name.
+  3. Fill in the rest as above. Only you can see this loan.
+
+
+7. SCREENS
+----------
+  Sign up / Sign in    name, email, password, language
+  Home (Loans)         your card, Lent/Borrowed switch, summary card,
+                       loan list, latest Records
+  Records              every entry, newest first
+  Reminders            notifications received
+  Summary              totals and loans by status
+  Groups               named groups and the loans in each
+  New Loan             the form described above
+  Loan page            balance, terms, buttons, this loan's Records
+  Change terms         new version of the terms
+  Join with code       for an invited borrower
+  Chits                "Coming soon"
+  Settings             language, theme, report a problem, sign out
+
+
+8. THE RULES AND CALCULATIONS (ALGORITHMS)
+------------------------------------------
+8.1 Money is stored as whole paise
+    1 rupee = 100 paise. 500 rupees is stored as 50000. The app never
+    uses decimal fractions for money, so there are no rounding
+    surprises. Interest rates are stored as "basis points": 10.00% is
+    stored as 1000.
+
+8.2 Records are append-only
+    A line in Records can never be changed or deleted. The database
+    itself refuses. A mistake is fixed by adding a "Correction" line
+    that cancels the wrong one. Each line can be corrected only once.
+
+8.3 The balance
+    Balance = loan given + interest added + late interest added
+              - payments + corrected payments.
+    It is always calculated from Records, never typed in.
+
+8.4 Period lengths
+    Day = 1 day, week = 7, month = 30, year = 365.
+    Daily rate = rate / period length.
+    Example: 10% per month = 10 / 30 = 0.3333% per day.
+
+8.5 Simple interest
+    Each day: interest = principal still owed x daily rate.
+    Example: 500 x 10% / 30 = 1.67 per day. After 30 days: 550.10.
+
+8.6 Compound interest
+    Each day: interest = (principal still owed + unpaid interest)
+                         x daily rate.
+    Unpaid interest earns interest too. The same loan after 30 days:
+    552.50.
+
+8.7 Payments: interest first
+    A payment first clears unpaid interest. Only what is left reduces
+    the principal. (Day 10 in the story: 100 paid, 16.70 to interest,
+    83.30 to principal.)
+
+8.8 Late interest
+    Starts the day after: due date + grace days. Each day while the
+    balance is above zero: late interest = balance x late rate / period
+    length. One entry per day.
+
+8.9 Terms versions
+    Changing terms never edits the old ones. A new version is saved.
+    It applies from the day it is saved (India time). Earlier days keep
+    the earlier version.
+
+8.10 The nightly interest job
+    At 00:30 India time the server goes through every active loan. For
+    each loan it walks day by day from the start date:
+      - applies that day's payments and corrections,
+      - finds the terms version in force that day,
+      - if that day's interest is already in Records, uses it as is,
+      - if not, calculates it and adds it.
+    This means: running the job twice adds nothing the second time, and
+    if the job misses some days it fills them in on its next run.
+    Interest for a day is added after that day ends.
+
+8.11 Rounding
+    Each day's interest is rounded to the nearest paisa (half rounds
+    up). Over a month this can differ from the exact figure by a few
+    paise: 550.10 instead of 550.00 in the example.
+
+8.12 Loan status
+    Paid: balance is 0. Overdue: past the due date. Due soon: due
+    today or within 2 days. Otherwise: On track.
+
+8.13 Reminders
+    Once a day at 09:00 India time, for each active loan with a balance:
+    2 days before the due date, on the due date, and every day after
+    it. The same kind is never sent twice in one day. The reminder goes
+    to the borrower. If the borrower has no app, it goes to the lender.
+
+8.14 Pings
+    Only the lender of a shared loan can ping, at most 3 times per loan
+    per day. The limit is enforced on the server.
+
+8.15 Invite codes
+    10 random characters, shown as XXXXX-XXXXX. A code works once and
+    expires after 7 days. The lender cannot use their own code.
+
+8.16 Who can see what
+    Every table in the database has a rule: you can read a loan only
+    if you created it, lent it, or borrowed it. A third person sees
+    nothing. Only the lender (or the person keeping a solo record) can
+    add payments or change terms. Only the borrower can accept terms
+    and confirm payments. Only the server can add interest.
+
+
+9. HOW IT IS BUILT (THE PARTS)
+------------------------------
+  The phone app     Flutter (one codebase for Android and iPhone).
+                    Folder: lib/
+
+  The backend       Supabase: a Postgres database, sign-in, access
+                    rules, and live updates. Folder: supabase/
+
+  Server jobs       Two small programs (Edge Functions) started every
+                    day by a timer in the database:
+                      accrue-interest   adds interest at 00:30
+                      send-reminders    sends reminders at 09:00, and
+                                        pings when a lender asks
+
+  Push messages     Firebase Cloud Messaging delivers notifications to
+                    phones.
+
+How a change travels: the app sends it to the database. The database
+checks the rules and saves it. The database then tells the other phone,
+which reloads. Interest and reminders start from the server's timer,
+not from anyone's phone, so they happen even when nobody opens the app.
+
+The important rules (who may see or change what, how interest is
+calculated, the ping limit) live in the database, not in the app. Even
+a modified app could not break them.
+
+
+10. WHAT IS STORED (THE DATA)
+-----------------------------
+  profiles             your name and language
+  contacts             people you added (name, optional phone)
+  groups               named groups, and who is a member
+  loans                amount, dates, who lent, who borrowed, status
+  loan_terms           each version of the interest terms
+  ledger_entries       Records: loan given, payment, interest, late
+                       interest, terms change, correction
+  entry_confirmations  payments the borrower confirmed
+  invites              invite codes
+  notifications        reminders and pings received
+  device_tokens        which phone to send your notifications to
+  feedback             problem reports from testers
+
+Passwords are handled by the sign-in service. The app never stores or
+sees them in readable form.
+
+
+11. PRIVACY AND SAFETY
+----------------------
+  - A person sees only loans they are part of.
+  - Records cannot be altered, so neither side can rewrite history.
+  - The app holds only a public key. The powerful server key stays on
+    the server and is never in the app.
+  - Names and amounts are not written to logs.
+  - The app makes no claims such as "100% secure" and no claims about
+    legal compliance. Legal and licensing questions belong to the app
+    owner.
+  - An independent security review is planned before any public launch.
+
+
+12. WHAT LEKKA DOES NOT DO
+--------------------------
+  - It does not send, receive or hold money.
+  - It has no payment gateway.
+  - It does not take gold or property as security.
+  - It has no website version and no admin panel.
+  - Sign-in by phone number (OTP) is not built yet.
+  - The Chits feature is not built yet.
+  - The due date does not move forward by itself. An overdue loan keeps
+    getting late interest and a daily reminder until it is paid or
+    closed.
+
+
+13. WHAT IS FINISHED AND WHAT IS LEFT
+-------------------------------------
+Written:
+  Phase 1  App skeleton, sign-in, three languages, light/dark theme
+  Phase 2  Groups, people, loans, payments, Records, corrections
+  Phase 3  Automatic interest, late interest, terms versions
+  Phase 4  Shared loans: invite, join, accept terms, confirm payments
+  Phase 5  Reminders, pings, Reminders screen
+  Phase 6  Report a problem, guides, translation review sheet
+
+Tested: the database rules for all of the above (run "npm test" in
+supabase/tests).
+
+Not yet done:
+  - Build and run the app on real phones and fix what comes up.
+  - Set up the Supabase project, the two server jobs and Firebase.
+  - A native Telugu speaker and a native Hindi speaker must review all
+    translated text (docs/translation_review.csv).
+  - A few weeks of use by a closed circle with real loans.
+  - Phase 7, public launch: phone-number sign-in, security review,
+    privacy policy and terms, store listings, the real Chits feature.
+
+Where to read more:
+  README.md                  setup and the checks for each phase
+  docs/RELEASE.md            server jobs, push, backups, test builds
+  docs/TESTING.md            what to check on a phone
+  docs/LAUNCH_CHECKLIST.md   what Phase 7 needs
+  docs/spec/                 the original build prompt and phases
+  docs/status/               what was built and tested in each phase
+
+
+14. WORDS USED IN THIS FILE
+---------------------------
+  Lender         the person who gives the money
+  Borrower       the person who takes the money
+  Principal      the amount lent, not counting interest
+  Interest       the extra money charged for the loan
+  Simple         interest charged only on the principal
+  Compound       interest charged on principal plus unpaid interest
+  Late interest  extra interest charged after the due date
+  Grace days     days allowed after the due date before late interest
+  Terms          the agreed rate, period, type, late interest, grace days
+  Version        one saved set of terms; a change makes a new version
+  Records        the permanent list of everything that happened on a loan
+  Correction     an entry that cancels a wrong payment
+  Balance        what is still owed right now
+  Ping           a manual reminder sent by the lender
+  Group          a named folder of loans
+  Paise          1/100 of a rupee
+  Vaddi vyaparam informal moneylending in South India
